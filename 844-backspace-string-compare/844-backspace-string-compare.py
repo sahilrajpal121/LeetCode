@@ -21,6 +21,6 @@ class Solution:
             else:
                 t_new += ch
         
-        print(s_new, t_new)
+        print(s_new, t_new) #debug
         return s_new == t_new
                 
