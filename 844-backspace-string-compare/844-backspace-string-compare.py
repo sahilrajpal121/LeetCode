@@ -15,9 +15,6 @@ class Solution:
             return new
         
         
-        s_new = process(s)
-        t_new = process(t)
         
-        print(s_new, t_new) #debug
-        return s_new == t_new
+        return process(s) == process(t)
                 
