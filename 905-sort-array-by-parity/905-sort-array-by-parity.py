@@ -4,12 +4,10 @@ class Solution:
         i = 0 
         while i < j:
             if nums[i] & 1:
-                if nums[j] & 1:
-                    j -= 1
-                else:
+                if not nums[j] & 1:
                     nums[i], nums[j] = nums[j], nums[i]
-                    j -= 1
                     i += 1
+                j -= 1
             else: 
                 i += 1
         print(i, j)
